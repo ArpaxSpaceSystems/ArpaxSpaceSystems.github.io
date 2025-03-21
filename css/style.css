@@ -154,21 +154,9 @@ footer {
     gap: 15px;
 }
 
-.footer-icon-mail {
-    width: 30px;
-    height: 30px;
-    transition: opacity 0.3s ease;
-}
-
-.footer-icon-X {
+.footer-icon {
     width: 24px;
     height: 24px;
-    transition: opacity 0.3s ease;
-}
-
-.footer-icon-long {
-    width: 21px;
-    height: 12px;
     transition: opacity 0.3s ease;
 }
 

@@ -154,7 +154,13 @@ footer {
     gap: 15px;
 }
 
-.footer-icon {
+.footer-icon-mail {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-icon-X {
     width: 24px;
     height: 24px;
     transition: opacity 0.3s ease;

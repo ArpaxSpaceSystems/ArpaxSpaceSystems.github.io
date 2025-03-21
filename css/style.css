@@ -160,6 +160,16 @@ footer {
     transition: opacity 0.3s ease;
 }
 
+.footer-icon-long {
+    width: 42px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
 .footer-icon:hover {
+    opacity: 0.8; /* Effet de survol pour les icônes */
+}
+
+.footer-icon-long:hover {
     opacity: 0.8; /* Effet de survol pour les icônes */
 }

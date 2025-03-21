@@ -50,6 +50,18 @@ nav {
     padding: 0;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -58,25 +70,20 @@ nav {
     padding-bottom: 3px;
 }
 
-.nav-links a.active::after {
+.nav-links a::after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 1px; /* Soulignage plus fin */
-    background-color: white;
-    bottom: 0;
-    left: 0;
-}
-
-
-.nav-links a:hover::after {
-    content: '';
-    position: absolute;
-    width: 100%;
     height: 1px;
     background-color: white;
     bottom: 0;
     left: 0;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
 }
 
 .language-selector {

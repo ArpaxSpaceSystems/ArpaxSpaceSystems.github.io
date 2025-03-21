@@ -69,3 +69,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //changeLanguage('en');
 });
+
+document.getElementById('current-year').textContent = new Date().getFullYear();

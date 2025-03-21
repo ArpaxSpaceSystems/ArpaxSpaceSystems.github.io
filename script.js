@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Par défaut, charger la langue française
-    changeLanguage('fr');
+    // Par défaut, charger la langue anglais
+    changeLanguage('en');
 });

@@ -67,7 +67,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = localStorage.getItem('language') || 'en';
     changeLanguage(savedLanguage);
 
-    //changeLanguage('en');
-    document.getElementById('current-year').textContent = new Date().getFullYear();
 });
 

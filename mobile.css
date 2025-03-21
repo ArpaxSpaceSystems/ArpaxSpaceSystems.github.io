@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .language-selector {
+        justify-content: center;
+    }
+}

@@ -20,8 +20,15 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration: none; /* Supprime le soulignement du lien */
+    text-decoration: none; /* Supprime le soulignage */
     color: white; /* Garde la couleur du texte */
+}
+
+.logo:hover,
+.logo:active,
+.logo:visited {
+    text-decoration: none; /* Pas de soulignage au survol, clic ou après visite */
+    color: white; /* Garde la couleur même après un clic */
 }
 
 .logo-icon {

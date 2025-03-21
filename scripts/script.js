@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Gallus 5': { fr: 'Gallus 5', en: 'Gallus 5' },
         'R & D': { fr: 'R & D', en: 'R & D' },
         'Gallery': { fr: 'Galerie', en: 'Gallery' },
-        'À propos': { fr: 'À propos', en: 'About' }
+        'About': { fr: 'À propos', en: 'About' }
     };
 
     function changeLanguage(lang) {
@@ -62,6 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             changeLanguage(lang);
         });
     });
+
+    // Charger la langue sauvegardée ou utiliser le français par défaut
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    changeLanguage(savedLanguage);
 
     //changeLanguage('en');
 });

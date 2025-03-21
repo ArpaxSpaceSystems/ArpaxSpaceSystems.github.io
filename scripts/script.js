@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         document.documentElement.lang = lang;
+
+        // Sauvegarder la langue dans localStorage
+        localStorage.setItem('language', lang);
     }
 
     flags.forEach(flag => {
@@ -60,5 +63,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    changeLanguage('en');
+    //changeLanguage('en');
 });

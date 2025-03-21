@@ -59,14 +59,6 @@ nav {
     left: 0;
 }
 
-.nav-links a::after {
-    transition: width 0.3s ease;
-    width: 0;
-}
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    width: 100%;
-}
 
 .nav-links a:hover::after {
     content: '';

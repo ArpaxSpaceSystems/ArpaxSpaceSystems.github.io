@@ -158,12 +158,14 @@ footer {
     width: 25px;
     height: 25px;
     transition: opacity 0.3s ease;
+    align-items: center;
 }
 
 .footer-icon-long {
-    width: 61px;
-    height: 36px;
+    width: 75px;
+    height: 43px;
     transition: opacity 0.3s ease;
+    align-items: center;
 }
 
 .footer-icon:hover {

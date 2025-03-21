@@ -17,31 +17,77 @@ nav {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-nav ul {
+.logo-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px; /* Soulignage plus fin */
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
+
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.flag {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.flag:hover {
+    opacity: 0.8;
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 50px;
-    background: url('images/background.jpg') no-repeat center/cover;
-}
-
-.hero .text {
-    max-width: 50%;
+    text-align: center;
 }
 
 .hero h1 {
@@ -50,9 +96,4 @@ nav a {
 
 .hero p {
     font-size: 18px;
-}
-
-.hero img {
-    max-width: 40%;
-    border-radius: 10px;
 }

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Gallus 5': { fr: 'Gallus 5', en: 'Gallus 5' },
         'R & D': { fr: 'R & D', en: 'R & D' },
         'Gallery': { fr: 'Galerie', en: 'Gallery' },
-        'À propos': { fr: 'À propos', en: 'About' }
+        'About': { fr: 'À propos', en: 'About' }
     };
 
     // Fonction pour changer la langue

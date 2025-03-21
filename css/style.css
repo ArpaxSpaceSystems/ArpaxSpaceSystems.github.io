@@ -155,8 +155,8 @@ footer {
 }
 
 .footer-icon-mail {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     transition: opacity 0.3s ease;
 }
 
@@ -167,8 +167,8 @@ footer {
 }
 
 .footer-icon-long {
-    width: 42px;
-    height: 24px;
+    width: 21px;
+    height: 12px;
     transition: opacity 0.3s ease;
 }
 

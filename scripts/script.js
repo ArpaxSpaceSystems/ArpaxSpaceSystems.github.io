@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     changeLanguage(savedLanguage);
 
     //changeLanguage('en');
-    
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 });
 
-document.getElementById('current-year').textContent = new Date().getFullYear();

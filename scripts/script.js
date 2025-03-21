@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navTranslations = {
         'Home': { fr: 'Home', en: 'Home' },
-        'Panoramix Engine': { fr: 'Moteur Panoramix', en: 'Panoramix Engine' },
+        'Astreus Engine': { fr: 'Moteur Astreus', en: 'Astreus Engine' },
         'Avionics': { fr: 'Avionique', en: 'Avionics' },
         'Structure': { fr: 'Structure', en: 'Structure' },
         'Gall.E-Star 5': { fr: 'Gall.E-Star 5', en: 'Gall.E-Star 5' },

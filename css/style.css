@@ -90,7 +90,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     padding: 50px;
-    background: url('images/gallery/Panoramix Engine V1.PNG') no-repeat center/cover;
+    background: url('/images/gallery/Panoramix Engine V1.PNG') no-repeat center/cover;
 }
 
 .hero .text {

@@ -20,6 +20,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: white; /* Garde la couleur du texte */
 }
 
 .logo-icon {

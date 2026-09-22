@@ -1,3 +1,12 @@
+// window.addEventListener('wheel', (event) => {
+//     if (event.target.closest('model-viewer')) {
+//         event.preventDefault();
+//         event.stopImmediatePropagation();
+//     }
+// }, { passive: false, capture: true });
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script chargé !');
 
@@ -68,4 +77,30 @@ document.addEventListener('DOMContentLoaded', () => {
     changeLanguage(savedLanguage);
 
 });
+
+// ===== Parallaxe sur les images =====
+const parallaxImages = document.querySelectorAll('.parallax-img');
+
+function updateParallax() {
+    parallaxImages.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+        const move = (progress - 0.5) * 60; // ← intensité (40 = subtil, 80 = fort)
+        img.style.transform = `translateY(${move}px)`;
+    });
+}
+
+window.addEventListener('scroll', updateParallax);
+window.addEventListener('resize', updateParallax);
+updateParallax();
+
+// // Désactive le zoom à la molette (tout en gardant le pinch à 2 doigts)
+// document.querySelectorAll('model-viewer').forEach(viewer => {
+//     viewer.addEventListener('wheel', (event) => {
+//         event.preventDefault();
+//         event.stopImmediatePropagation();
+//     }, { passive: false, capture: true });
+// });
+
 

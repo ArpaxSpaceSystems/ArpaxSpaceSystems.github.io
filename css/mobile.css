@@ -10,4 +10,8 @@
     .language-selector {
         justify-content: center;
     }
+
+    .project::after {
+    display: none; /* on cache le point sur mobile pour rester propre */
+    }
 }
